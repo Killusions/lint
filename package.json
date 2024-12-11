@@ -1,11 +1,11 @@
 {
-  "name": "@siemens/lint",
+  "name": "@killusions/lint",
   "version": "0.0.0",
   "description": "Collection of linter configuration files and plugins used across Siemens.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:siemens/lint.git"
+    "url": "git@github.com:Killusions/lint.git"
   },
   "author": {
     "name": "Siemens",

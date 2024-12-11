@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/eslint-config-angular",
+  "name": "@killusions/eslint-config-angular",
   "version": "1.2.2",
   "description": "Configuration for linting Angular TypeScript and templates using Angular ESLint.",
   "files": [

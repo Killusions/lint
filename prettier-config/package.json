@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/prettier-config",
+  "name": "@killusions/prettier-config",
   "version": "1.2.2",
   "description": "Configuration for Prettier.",
   "files": [

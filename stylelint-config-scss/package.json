@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/stylelint-config-scss",
+  "name": "@killusions/stylelint-config-scss",
   "version": "1.2.2",
   "description": "Configuration for Stylelint using SCSS (Sass).",
   "files": [

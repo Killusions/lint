@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/eslint-config-typescript",
+  "name": "@killusions/eslint-config-typescript",
   "version": "1.2.2",
   "description": "Configuration for linting TypeScript using typescript-eslint.",
   "files": [

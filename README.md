@@ -23,14 +23,14 @@ this repo for various other programming languages and frameworks.
 
 ## Installation
 
-Install `@siemens/*-config*` and their peer dependencies in your project (whichever you need):
+Install `*-config*` and their peer dependencies in your project (whichever you need):
 
 ```bash
-npm install @siemens/stylelint-config-scss --save-dev --save-exact
-npm install @siemens/commitlint-config --save-dev --save-exact
-npm install @siemens/prettier-config --save-dev --save-exact
-npm install @siemens/eslint-config-typescript --save-dev --save-exact
-npm install @siemens/eslint-config-angular --save-dev --save-exact
+npm install stylelint-config-scss --save-dev --save-exact
+npm install commitlint-config --save-dev --save-exact
+npm install prettier-config --save-dev --save-exact
+npm install eslint-config-typescript --save-dev --save-exact
+npm install eslint-config-angular --save-dev --save-exact
 ```
 
 **_Note_** _You should specify the exact versions of the packages above and
@@ -48,7 +48,7 @@ Include the ESLint preset in your root `eslint.config.mjs`:
 import path from 'path';
 import { fileURLToPath } from 'url';
 import typescriptEslint from 'typescript-eslint';
-import typescriptConfig from '@siemens/eslint-config-typescript';
+import typescriptConfig from 'eslint-config-typescript';
 
 // mimic CommonJS variables
 const __filename = fileURLToPath(import.meta.url);
@@ -78,8 +78,8 @@ sure `"type": "module"` is set in your root `package.json`:
 import path from 'path';
 import { fileURLToPath } from 'url';
 import typescriptEslint from 'typescript-eslint';
-import angularTypescriptConfig from '@siemens/eslint-config-angular';
-import angularTemplateConfig from '@siemens/eslint-config-angular/template';
+import angularTypescriptConfig from 'eslint-config-angular';
+import angularTemplateConfig from 'eslint-config-angular/template';
 
 // mimic CommonJS variables
 const __filename = fileURLToPath(import.meta.url);
@@ -220,7 +220,7 @@ Include the stylelint preset in your `.stylelintrc.yml`:
 
 ```yml
 extends:
-  - '@siemens/stylelint-config-scss/stylelintrc.yml'
+  - 'stylelint-config-scss/stylelintrc.yml'
 ```
 
 ### Commitlint
@@ -230,7 +230,7 @@ Include the commitlint preset in your `package.json`:
 ```json
   "commitlint": {
     "extends": [
-      "@siemens/commitlint-config/.commitlintrc.js"
+      "commitlint-config/.commitlintrc.js"
     ]
   },
 
@@ -247,7 +247,7 @@ Include the commitlint preset in your `package.json`:
 Include the shared Prettier config in your `package.json`:
 
 ```json
-"prettier": "@siemens/prettier-config/.prettierrc.json",
+"prettier": "prettier-config/.prettierrc.json",
 ```
 
 ### ESLint Plugin

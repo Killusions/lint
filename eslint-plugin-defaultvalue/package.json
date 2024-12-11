@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/eslint-plugin-defaultvalue",
+  "name": "@killusions/eslint-plugin-defaultvalue",
   "version": "1.2.2",
   "main": "lib/index.js",
   "type": "module",

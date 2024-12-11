@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/commitlint-config",
+  "name": "@killusions/commitlint-config",
   "version": "1.2.2",
   "description": "Configuration for commitlint.",
   "files": [

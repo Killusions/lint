@@ -5,10 +5,10 @@ The rule is aware of `Signals` by `@angular/core` and will automatically use the
 
 ## Installation
 
-Install `@siemens/eslint-plugin-defaultvalue` in your project.
+Install `eslint-plugin-defaultvalue` in your project.
 
 ```bash
-npm install @siemens/eslint-plugin-defaultvalue --save-dev
+npm install eslint-plugin-defaultvalue --save-dev
 ```
 
 ## Configuration
@@ -17,7 +17,7 @@ Include the ESLint plugin and rule in your relevant `eslint.config.(m)js`:
 
 ```js
 ...
-import defaultvalue from '@siemens/eslint-plugin-defaultvalue';
+import defaultvalue from 'eslint-plugin-defaultvalue';
 
 export default [
   {
