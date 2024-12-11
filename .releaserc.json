@@ -6,6 +6,17 @@
     [
       "@semantic-release/git",
       {
+        "assets": [
+          "commitlint-config/package.json",
+          "eslint-config-angular/package.json",
+          "eslint-config-typescript/package.json",
+          "eslint-plugin-defaultvalue/package.json",
+          "prettier-config/package.json",
+          "stylelint-config-scss/package.json",
+          "CHANGELOG.md",
+          "package.json",
+          "package-lock.json"
+        ],
         "message": "chore: release version ${nextRelease.version}"
       }
     ],
@@ -51,7 +62,48 @@
         "pkgRoot": "dist/stylelint-config-scss"
       }
     ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/commitlint-config",
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/eslint-config-angular",
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/eslint-config-typescript",
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/eslint-plugin-defaultvalue",
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/prettier-config",
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/stylelint-config-scss",
+        "npmPublish": false
+      }
+    ],
     "@semantic-release/github"
-  ],
-  "repositoryUrl": "git@github.com:Killusions/lint.git"
+  ]
 }
