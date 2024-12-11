@@ -1,6 +1,6 @@
 {
   "name": "@killusions/eslint-config-typescript",
-  "version": "1.2.2",
+  "version": "0.0.0",
   "description": "Configuration for linting TypeScript using typescript-eslint.",
   "files": [
     "*.mjs",
@@ -21,6 +21,9 @@
     "siemens",
     "lint"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@eslint/js": "^9.9.1",

@@ -11,6 +11,7 @@
     "name": "Siemens",
     "email": "opensource@siemens.com"
   },
+  "private": true,
   "type": "module",
   "devDependencies": {
     "@commitlint/cli": "19.4.0",

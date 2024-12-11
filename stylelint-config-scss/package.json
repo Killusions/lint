@@ -1,6 +1,6 @@
 {
   "name": "@killusions/stylelint-config-scss",
-  "version": "1.2.2",
+  "version": "0.0.0",
   "description": "Configuration for Stylelint using SCSS (Sass).",
   "files": [
     "*.yml",
@@ -20,6 +20,9 @@
     "siemens",
     "lint"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "peerDependencies": {
     "stylelint": "^16.8.1",
