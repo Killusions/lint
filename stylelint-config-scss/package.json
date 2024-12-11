@@ -1,6 +1,6 @@
 {
   "name": "@killusions/stylelint-config-scss",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Configuration for Stylelint using SCSS (Sass).",
   "files": [
     "*.yml",
