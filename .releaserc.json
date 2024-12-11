@@ -54,43 +54,49 @@
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/commitlint-config",
+        "pkgRoot": "commitlint-config",
         "npmPublish": false
       }
     ],
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/eslint-config-angular",
+        "pkgRoot": "eslint-config-angular",
         "npmPublish": false
       }
     ],
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/eslint-config-typescript",
+        "pkgRoot": "eslint-config-typescript",
         "npmPublish": false
       }
     ],
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/eslint-plugin-defaultvalue",
+        "pkgRoot": "eslint-plugin-defaultvalue",
         "npmPublish": false
       }
     ],
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/prettier-config",
+        "pkgRoot": "prettier-config",
         "npmPublish": false
       }
     ],
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist/stylelint-config-scss",
+        "pkgRoot": "stylelint-config-scss",
         "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "npm install"
       }
     ],
     [
