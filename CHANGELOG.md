@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Killusions/lint/compare/v1.3.1...v1.4.0) (2024-12-11)
+
+
+### Features
+
+* add test note ([a5dc29a](https://github.com/Killusions/lint/commit/a5dc29a8a228916f7227f31f97f8d817223a4ce0))
+
 ## [1.3.1](https://github.com/Killusions/lint/compare/v1.3.0...v1.3.1) (2024-12-11)
 
 
