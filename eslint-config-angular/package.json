@@ -1,6 +1,6 @@
 {
   "name": "@killusions/eslint-config-angular",
-  "version": "1.4.0",
+  "version": "0.0.0-development",
   "description": "Configuration for linting Angular TypeScript and templates using Angular ESLint.",
   "files": [
     "*.mjs",

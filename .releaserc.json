@@ -4,18 +4,6 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md"
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "."
-      }
-    ],
-    [
       "@semantic-release/npm",
       {
         "pkgRoot": "dist/commitlint-config"
@@ -49,71 +37,6 @@
       "@semantic-release/npm",
       {
         "pkgRoot": "dist/stylelint-config-scss"
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "commitlint-config",
-        "npmPublish": false
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "eslint-config-angular",
-        "npmPublish": false
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "eslint-config-typescript",
-        "npmPublish": false
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "eslint-plugin-defaultvalue",
-        "npmPublish": false
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "prettier-config",
-        "npmPublish": false
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "stylelint-config-scss",
-        "npmPublish": false
-      }
-    ],
-    [
-      "@semantic-release/exec",
-      {
-        "prepareCmd": "npm install"
-      }
-    ],
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "commitlint-config/package.json",
-          "eslint-config-angular/package.json",
-          "eslint-config-typescript/package.json",
-          "eslint-plugin-defaultvalue/package.json",
-          "prettier-config/package.json",
-          "stylelint-config-scss/package.json",
-          "CHANGELOG.md",
-          "package.json",
-          "package-lock.json"
-        ],
-        "message": "chore: release version ${nextRelease.version}"
       }
     ],
     "@semantic-release/github"

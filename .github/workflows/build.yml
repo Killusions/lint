@@ -2,24 +2,18 @@ name: Build
 
 on:
   push:
-    branches: ['main']
   pull_request:
-    branches: ['main']
-
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [22.x]
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 22.x
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 22.x
           cache: 'npm'
       - run: npm ci
       - run: npm run build
@@ -27,3 +21,7 @@ jobs:
       - run: npm run lint:commit
       - run: npm run lint
       - run: npm run plugin:test
+      - name: Semantic Release
+        run: npx semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
