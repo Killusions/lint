@@ -1,6 +1,6 @@
 # Fork of Siemens Lint
 
-This is for testing purposes only. Will release on push to main.
+This is for testing purposes only.
 
 Siemens Lint helps you to improve and keep the code quality of your project on
 a high level. It provides presets and plugins for various linters used at
