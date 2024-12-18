@@ -21,11 +21,6 @@ jobs:
       - run: npm run lint:commit
       - run: npm run lint
       - run: npm run plugin:test
-      - name: Semantic Release
-        run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   release:
     if: ${{ github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/') }}
