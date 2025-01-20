@@ -3,10 +3,12 @@
  * SPDX-License-Identifier: MIT
  */
 import eslintJs from '@eslint/js';
-import typescriptEslint from 'typescript-eslint';
-import importPlugin from 'eslint-plugin-import';
+// @ts-expect-error because there are no types available, and `* as` so it works with CommonJS.
+import * as importPlugin from 'eslint-plugin-import';
 import jsdocPlugin from 'eslint-plugin-jsdoc';
+// @ts-expect-error because there are no types available.
 import preferArrowPlugin from 'eslint-plugin-prefer-arrow';
+import typescriptEslint from 'typescript-eslint';
 
 // Keep in sync with eslint-config-angular (except Angular stuff).
 

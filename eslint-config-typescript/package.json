@@ -3,10 +3,19 @@
   "version": "0.0.0-development",
   "description": "Configuration for linting TypeScript using typescript-eslint.",
   "files": [
-    "*.mjs",
-    "*.md"
+    "*.js",
+    "*.md",
+    "cjs/*.js"
   ],
-  "main": "./index.mjs",
+  "main": "./cjs/index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "require": "./cjs/index.cjs",
+    "import": "./index.js",
+    "types": "./index.d.ts"
+  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/siemens/lint.git"

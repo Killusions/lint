@@ -1,5 +1,9 @@
 # compiled output
 /dist
+*/**/*.js
+*/**/*.cjs
+*/**/*.d.ts
+*/**/*.d.cts
 
 # dependencies
 node_modules

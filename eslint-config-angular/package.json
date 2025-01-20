@@ -3,15 +3,31 @@
   "version": "0.0.0-development",
   "description": "Configuration for linting Angular TypeScript and templates using Angular ESLint.",
   "files": [
-    "*.mjs",
-    "*.md"
+    "*.js",
+    "*.md",
+    "cjs/*.js"
   ],
-  "main": "./index.mjs",
+  "main": "./cjs/index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "exports": {
-    ".": "./index.mjs",
-    "./typescript": "./index.mjs",
-    "./template": "./template.mjs"
+    ".": {
+      "require": "./cjs/index.cjs",
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./typescript": {
+      "require": "./cjs/index.cjs",
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./template": {
+      "require": "./cjs/template.cjs",
+      "import": "./template.mjs",
+      "types": "./template.d.ts"
+    }
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/siemens/lint.git"

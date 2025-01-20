@@ -24,6 +24,7 @@ jobs:
       - run: npm run format:check
       - run: npm run lint:commit
       - run: npm run lint
+      - run: npm run lint:cjs
       - run: npm run plugin:test
 
   release:

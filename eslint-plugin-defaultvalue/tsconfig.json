@@ -1,7 +1,7 @@
 {
   "exclude": ["tests/**"],
   "compilerOptions": {
-    "outDir": "../dist/eslint-plugin-defaultvalue/lib",
+    "outDir": "./lib",
     "target": "es2022",
     "module": "Node16",
     "moduleResolution": "Node16",

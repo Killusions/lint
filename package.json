@@ -18,6 +18,8 @@
     "@commitlint/config-conventional": "19.2.2",
     "@microsoft/tsdoc": "^0.15.0",
     "@microsoft/tsdoc-config": "^0.17.0",
+    "@types/eslint": "9.6.1",
+    "@types/eslint__js": "8.42.3",
     "@types/node": "^22.4.1",
     "@typescript-eslint/rule-tester": "8.6.0",
     "@typescript-eslint/utils": "8.6.0",
@@ -37,7 +39,7 @@
     "stylelint": "16.8.1",
     "stylelint-scss": "6.5.1",
     "tsx": "^4.19.1",
-    "typescript": "^5.5.4",
+    "typescript": "^5.7.3",
     "typescript-eslint": "8.6.0"
   },
   "overrides": {
@@ -46,12 +48,16 @@
     }
   },
   "scripts": {
-    "build": "rimraf dist && tsc -p eslint-plugin-defaultvalue/tsconfig.json && cpy \"./**/{package.json,*.js,*.mjs,*.cjs,*.yml,*.md,.prettierrc.json}\" '!{node_modules,dist,tsconfig.*}' '!**/tests/**' '!./*' ./dist/ && npm run build:copy",
+    "build": "rimraf dist && npm run build:eslint-angular && npm run build:eslint-typescript && npm run build:eslint-plugin && cpy \"./**/{*.json,*.js,*.mjs,*.cjs,*.d.ts,*.yml,*.md}\" '!{node_modules,dist,.github}' '!**/tsconfig.json' '!**/tests/**', '!./*' ./dist/ && npm run build:copy",
+    "build:eslint-angular": "tsc -p eslint-config-angular/tsconfig.json && rimraf eslint-config-angular/**/*.d.cts",
+    "build:eslint-typescript": "tsc -p eslint-config-typescript/tsconfig.json && rimraf eslint-config-typescript/**/**.d.cts",
+    "build:eslint-plugin": "tsc -p eslint-plugin-defaultvalue/tsconfig.json",
     "build:copy": "cpy \"{LICENSE.md,README.md}\" ./dist/stylelint-config-scss && cpy \"{LICENSE.md,README.md}\" ./dist/commitlint-config && cpy \"{LICENSE.md,README.md}\" ./dist/prettier-config && cpy \"{LICENSE.md,README.md}\" ./dist/eslint-config-typescript && cpy \"{LICENSE.md,README.md}\" ./dist/eslint-config-angular && cpy \"LICENSE.md\" ./dist/eslint-plugin-defaultvalue",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
+    "lint:cjs": "eslint -c eslint.config.cjs",
     "lint:commit": "commitlint --from=origin/main",
     "plugin:test": "tsx --import ./eslint-plugin-defaultvalue/tests/setup-node.js --test ./eslint-plugin-defaultvalue/tests/*.test.ts",
     "release": "semantic-release",

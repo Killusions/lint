@@ -1,0 +1,13 @@
+{
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "outDir": ".",
+    "declaration": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false // Takes too long
+  }
+}

@@ -2,8 +2,8 @@
  * Copyright Siemens 2024.
  * SPDX-License-Identifier: MIT
  */
-import typescriptEslint from 'typescript-eslint';
 import angularEslint from 'angular-eslint';
+import typescriptEslint from 'typescript-eslint';
 
 export const configBase = typescriptEslint.config(...angularEslint.configs.templateRecommended);
 
